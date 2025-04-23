@@ -5,14 +5,14 @@ First set up a venv and install the libraries in the requirements.txt file.
 # AST-Chiff
 This AST model will be trained and tested on 13 individual Chiffchaffs from the dataset. In order to train the model, first download the data and organize the directory as:
 
-Bird-audio
-|---chiffchaff-fg
+Bird-audio/
+|---chiffchaff-fg/
     |---cutted_day1_PC1101_0000.wav
     |---cutted_day1_PC1101_0001.wav
     .
     .
     .
-|---csv
+|---csv/
     |---chiffchaff-acrossyear-fg-trn.csv
     |---chiffchaff-withinyear-fg-trn.csv
     .
@@ -21,10 +21,32 @@ Bird-audio
 Make sure this Bird-audio is in the same folder as the codes.
 Then set up a folder to store the spectrogram inputs from AST-data-init.py as follows:
 dataset-inputs
-|---Train
-|---Test
+|---Train/
+|---Test/
 Then run the AST-data-init.py and run AST-chiff.py.
 
 # AST-Pipits
+This AST model will be trained and tested on 10 individual Pipits from the dataset. Using the same Bird-audio configuration create a new folder to store the spectrogram inputs from the pipit-data-init.py. 
 
-Using the same Bird-audio configuration create a new folder to store the spectrogram inputs from the AST-pipit
+dataset-input-pipit/
+|---Train/
+|---Test/
+
+Run pipit-data-init.py and then run AST-pipit.py
+
+# AST-mm
+
+This configuration will be trained and tested on both Chiffchaff and Pipits recordings from the same year. Set up a directory in the following architecture. 
+
+dataset-inputs-tot/
+|---Train/
+|---Test/
+
+Then run mm-data-init.py and AST-mm.py.
+
+# AST-ms
+
+This confugration will train the AST on both Chiffchaff and Pipits but only test on Chiffchaffs. Run AST-ms.py directly. 
+
+# resent-18-chiff-data-init.py
+
