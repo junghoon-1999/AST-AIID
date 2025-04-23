@@ -5,7 +5,7 @@ First set up a venv and install the libraries in the requirements.txt file.
 # AST-Chiff
 This AST model will be trained and tested on 13 individual Chiffchaffs from the dataset. In order to train the model, first download the data and organize the directory as:
 
-```plaintext Bird-audio/ ├── chiffchaff-fg/ │ ├── cutted_day1_PC1101_0000.wav │ ├── cutted_day1_PC1101_0001.wav │ └── ... ├── csv/ │ ├── chiffchaff-acrossyear-fg-trn.csv │ ├── chiffchaff-withinyear-fg-trn.csv │ └── ... ``` 
+```Bird-audio/ ├── chiffchaff-fg/ │ ├── cutted_day1_PC1101_0000.wav │ ├── cutted_day1_PC1101_0001.wav │ └── ... ├── csv/ │ ├── chiffchaff-acrossyear-fg-trn.csv │ ├── chiffchaff-withinyear-fg-trn.csv │ └── ... ``` 
 
 
 Make sure this Bird-audio is in the same folder as the codes.
