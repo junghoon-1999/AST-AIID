@@ -1,0 +1,30 @@
+This repository contains codes to train and develop an Automatic Acoustic Individual Identification (AIID) for animals by conducting transfer learning on the Audio Spectrogram Transformer (AST). 
+The data used to train this model can be found: https://zenodo.org/records/1413495 collected by Stowell et al. (2019) (https://doi.org/10.1111/2041-210X.13103).
+First set up a venv and install the libraries in the requirements.txt file. 
+
+# AST-Chiff
+This AST model will be trained and tested on 13 individual Chiffchaffs from the dataset. In order to train the model, first download the data and organize the directory as:
+
+Bird-audio
+|---chiffchaff-fg
+    |---cutted_day1_PC1101_0000.wav
+    |---cutted_day1_PC1101_0001.wav
+    .
+    .
+    .
+|---csv
+    |---chiffchaff-acrossyear-fg-trn.csv
+    |---chiffchaff-withinyear-fg-trn.csv
+    .
+    .
+    .
+Make sure this Bird-audio is in the same folder as the codes.
+Then set up a folder to store the spectrogram inputs from AST-data-init.py as follows:
+dataset-inputs
+|---Train
+|---Test
+Then run the AST-data-init.py and run AST-chiff.py.
+
+# AST-Pipits
+
+Using the same Bird-audio configuration create a new folder to store the spectrogram inputs from the AST-pipit
