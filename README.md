@@ -8,6 +8,14 @@ This AST model will be trained and tested on 13 individual Chiffchaffs from the 
 ```Bird-audio/ ├── chiffchaff-fg/ │ ├── cutted_day1_PC1101_0000.wav │ ├── cutted_day1_PC1101_0001.wav │ └── ... ├── csv/ │ ├── chiffchaff-acrossyear-fg-trn.csv │ ├── chiffchaff-withinyear-fg-trn.csv │ └── ... ``` 
 
 
+├── build                   # Compiled files (alternatively `dist`)
+├── docs                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── test                    # Automated tests (alternatively `spec` or `tests`)
+├── tools                   # Tools and utilities
+├── LICENSE
+└── README.md
+
 Make sure this Bird-audio is in the same folder as the codes.
 Then set up a folder to store the spectrogram inputs from AST-data-init.py as follows:
 ```dataset-inputs/ ├── Train/ ├── Test/ ```
