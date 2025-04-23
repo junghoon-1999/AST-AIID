@@ -13,13 +13,20 @@ Bird-audio/
     │    ├── cutted_day1_PC1101_0001.wav 
     │    │ 
     │    └── ... 
-    └── csv/ 
-         │ 
-         ├── chiffchaff-acrossyear-fg-trn.csv 
-         │ 
-         ├── chiffchaff-withinyear-fg-trn.csv 
-         │ 
-         └── ... 
+    ├── csv/ 
+    │    │ 
+    │    ├── chiffchaff-acrossyear-fg-trn.csv 
+    │    │ 
+    │    ├── chiffchaff-withinyear-fg-trn.csv 
+    │    │ 
+    │    └── ...
+    └── pipit-fg/
+         │
+         ├──pipit2017fg_more_0212_0000.wav
+         │
+         ├──pipit2017fg_more_0212_0001.wav
+         │
+         └── ...
 ```
 
 
