@@ -5,32 +5,16 @@ First set up a venv and install the libraries in the requirements.txt file.
 # AST-Chiff
 This AST model will be trained and tested on 13 individual Chiffchaffs from the dataset. In order to train the model, first download the data and organize the directory as:
 
-Bird-audio/
-|---chiffchaff-fg/
-    |---cutted_day1_PC1101_0000.wav
-    |---cutted_day1_PC1101_0001.wav
-    .
-    .
-    .
-|---csv/
-    |---chiffchaff-acrossyear-fg-trn.csv
-    |---chiffchaff-withinyear-fg-trn.csv
-    .
-    .
-    .
+<pre> <code>Bird-audio/ ├── chiffchaff-fg/ │ ├── cutted_day1_PC1101_0000.wav │ ├── cutted_day1_PC1101_0001.wav │ └── ... ├── csv/ │ ├── chiffchaff-acrossyear-fg-trn.csv │ ├── chiffchaff-withinyear-fg-trn.csv │ └── ... </code> </pre>
 Make sure this Bird-audio is in the same folder as the codes.
 Then set up a folder to store the spectrogram inputs from AST-data-init.py as follows:
-dataset-inputs
-|---Train/
-|---Test/
+<pre> <code>dataset-inputs/ ├── Train/ ├── Test/ </code> </pre>
 Then run the AST-data-init.py and run AST-chiff.py.
 
 # AST-Pipits
 This AST model will be trained and tested on 10 individual Pipits from the dataset. Using the same Bird-audio configuration create a new folder to store the spectrogram inputs from the pipit-data-init.py. 
 
-dataset-input-pipit/
-|---Train/
-|---Test/
+<pre> <code>dataset-input-pipit/ ├── Train/ ├── Test/ </code> </pre>
 
 Run pipit-data-init.py and then run AST-pipit.py
 
@@ -38,9 +22,7 @@ Run pipit-data-init.py and then run AST-pipit.py
 
 This configuration will be trained and tested on both Chiffchaff and Pipits recordings from the same year. Set up a directory in the following architecture. 
 
-dataset-inputs-tot/
-|---Train/
-|---Test/
+<pre> <code>dataset-inputs-tot/ ├── Train/ ├── Test/ </code> </pre>
 
 Then run mm-data-init.py and AST-mm.py.
 
@@ -53,39 +35,15 @@ This confugration will train the AST on both Chiffchaff and Pipits but only test
 This file runs the codes to test how a CNN model would work under the same conditions for comparison on Chiffchaffs. 
 Set up a new cnn-data folder to store the spectrogram files as as follows:
 
-cnn-data/
-|---Train/
-    |---PC1101/
-    |---PC1102/
-    .
-    .
-    .
-|---Test
-    |---PC1101/
-    |---PC1102/
-    .
-    .
-    .
+<pre> <code>cnn-data/ ├── Train/ │ ├── PC1101/ │ ├── PC1102/ │ └── ... ├── Test/ │ ├── PC1101/ │ ├── PC1102/ │ └── ... </code> </pre>
 Run resnet18-chiff-data-init.py and then run resnet-18-chiff.py.
 
 # resnet-18-pipit
 This file runs the codes to test how a CNN model would work under the same conditions for comparison on Pipits. 
 Set up a new cnn-data folder to store the spectrogram files as as follows:
 
-cnn-data/
-|---Train/
-    |---0212/
-    |---0312/
-    .
-    .
-    .
-|---Test
-    |---0212/
-    |---0312/
-    .
-    .
-    .
-Run resnet18-pipit-data-init.py and then run resnet-18-pipit.py.
+<pre> <code>cnn-data/ ├── Train/ │ ├── 0212/ │ ├── 0312/ │ └── ... ├── Test/ │ ├── 0212/ │ ├── 0312/ │ └── ... </code> </pre>
 
+Run resnet18-pipit-data-init.py and then run resnet-18-pipit.py.
 
 
