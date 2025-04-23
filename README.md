@@ -48,5 +48,44 @@ Then run mm-data-init.py and AST-mm.py.
 
 This confugration will train the AST on both Chiffchaff and Pipits but only test on Chiffchaffs. Run AST-ms.py directly. 
 
-# resent-18-chiff-data-init.py
+# resent-18-chiff
+
+This file runs the codes to test how a CNN model would work under the same conditions for comparison on Chiffchaffs. 
+Set up a new cnn-data folder to store the spectrogram files as as follows:
+
+cnn-data/
+|---Train/
+    |---PC1101/
+    |---PC1102/
+    .
+    .
+    .
+|---Test
+    |---PC1101/
+    |---PC1102/
+    .
+    .
+    .
+Run resnet18-chiff-data-init.py and then run resnet-18-chiff.py.
+
+# resnet-18-pipit
+This file runs the codes to test how a CNN model would work under the same conditions for comparison on Pipits. 
+Set up a new cnn-data folder to store the spectrogram files as as follows:
+
+cnn-data/
+|---Train/
+    |---0212/
+    |---0312/
+    .
+    .
+    .
+|---Test
+    |---0212/
+    |---0312/
+    .
+    .
+    .
+Run resnet18-pipit-data-init.py and then run resnet-18-pipit.py.
+
+
 
